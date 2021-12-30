@@ -1,0 +1,280 @@
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+picture {
+    margin:0;
+}
+/* Box Sizing */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-weight: 400;
+}
+
+body{
+    font-family: var(--ff-twitter);
+    font-size: var(--fs-400);
+    line-height: 1.1;
+}
+
+#container{
+    /* background-color: lightgray; */
+    border: 1px solid grey;
+    width:60vmax;
+    min-height: 100vh;
+    margin-inline: auto;
+}
+
+.name {
+    color: rgb(11, 13, 15);
+    font-weight: bold;
+}
+
+
+.flex{
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+
+
+
+:root{
+    --clr-black: rgb(11, 13, 15);
+    --clr-white: rgb(248, 248, 248);
+    --clr-grey: rgb(83, 100, 113);
+    --clr-blue: rgb(29,155,240);
+    /* font-sizes */
+    --fs-600:1.25rem;
+    --fs-500: 1rem;
+    --fs-400:0.9375rem;
+    
+    
+    /*font-families */
+    --ff-twitter:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Barlow",sans-serif;
+}
+
+/* Typography */
+.text-grey{color: var(--clr-grey)}
+
+.fs-600 {font-size: var(--fs-600);}
+.fs-500 {font-size: var(--fs-500);}
+.fs-400 {font-size: var(--fs-400);}
+
+.ff-twitter {font-family:var(--ff-twitter);}
+
+/* our css */
+.head{
+    margin-inline: 4.5rem;
+    margin-bottom: .3rem;
+}
+.main-image{
+    width: 100%;
+    
+}
+
+.display-container{
+  
+}
+
+
+
+.profil-background{
+    width: 100%;
+   position: relative;
+
+}
+.profil-details{
+    flex-direction: column;
+}
+.profil-picture{
+    width: 30%;
+    border-radius: 50%;
+}
+.follow-link{
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.profil-img{
+    display: block;
+    position: relative;
+    margin-bottom: -83px;
+}
+
+.profile-image{
+position: absolute;
+}
+.profile-image2{
+    position: relative;
+    
+}
+
+.image-container{
+    position: relative;
+    top: -70px;
+    left: 20px
+}
+
+.follow-btn{
+    background-color: var(--clr-black) ;
+    color: rgb(253, 254, 255);
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: 40% 40% 40% 40%;
+}
+.profile{
+    margin-inline: .9rem;
+    margin-top: 0.625rem;   
+    flex-direction: column;
+}
+.name{
+    margin:0;
+}
+.icon{
+   
+    width: 0;
+
+}
+.twitter-icon{
+    display: inline-flex;
+    width:30px;
+    margin-top: .5rem;
+    align-items: center;
+  
+}
+
+
+.date{
+    margin-left: .9rem;
+}
+.calendar {
+    width: 20px;
+    background-color: tomato;
+}
+
+/* following */
+#following {
+    margin-inline: .5rem;
+}
+
+/* tab css */
+.tab1{
+    width: 20%;
+    justify-content: center;
+}
+
+.tab3{
+    width: 15%;
+}
+
+.tab4{
+    width:20%;
+    justify-content: center;
+}
+.tweets-container{
+    font-family: inherit;
+    font-weight: 700;
+    justify-content: space-between;
+  
+}
+
+.underline-indicators> *{
+    cursor: pointer;
+    padding: var(--underline-gap,.75rem) 0;
+    border:0;
+    border-bottom: .2rem solid transparent;
+    background-color: transparent;
+     
+}
+
+.underline-indicators>*:hover,
+.underline-indicators > *:focus
+{
+    background-color: lightgrey;
+  
+}
+
+.underline-indicators> .active,
+.underline-indicators> [aria-selected= "true"]{
+    color: rgb(11, 13, 15);
+    border-color:rgb(50, 123, 218);
+}
+
+
+.content{
+    margin-top: .5rem;
+    border: 1px solid grey;
+}
+
+.left-section{
+    width: 10%;
+    background-color: wheat;
+    margin-inline: 1rem;
+}
+
+.tab-content{
+    width: 80%;
+    /* background-color: burlywood; */
+}
+
+.image-content{
+  width: 100%;
+  border-radius: 50%;
+ 
+}
+.outer-content{
+    margin-top: 2rem;
+}
+.icons{
+    width: 100px;
+}
+.tweet{
+    display: inline-flex;
+    justify-content: center;
+    width: 30%;
+}
+.inner-tweet{
+    width: 30%;
+}
+
+.comment-number{
+   align-self:center;
+}
+.icons:hover{
+    cursor: pointer;
+    background-color:rgb(29,155,240);
+}
+.inner-tweet img:hover{
+    cursor: pointer;
+    padding: .1rem;
+    border-radius: 50%;
+    color:rgb(29,155,240);
+}
+
+.tweet-text{
+    margin-top: .5rem;
+}
